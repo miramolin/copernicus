@@ -642,7 +642,7 @@ function zoomed() {
   });
 }
         
-d3.tsv("exo.cydereus.com/FLUXY.tsv", type, function(error, data) {
+d3.tsv("miramolin.github.io/cydereus/FLUXY.tsv", type, function(error, data) {
   if (error) throw error;
   x.domain(d3.extent(data, function(d) { return d.date; }));
   y.domain(d3.extent(data, function(d) { return d.Flux; }));
